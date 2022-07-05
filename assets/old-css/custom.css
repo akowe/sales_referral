@@ -1,0 +1,167 @@
+/**
+ * Button
+ */
+.carousel-caption {
+	position: absolute;
+	/* right: 15%; */
+	bottom: 80px;
+	left: 5%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+	text-align: left;
+}
+.btn-transparent {
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+}
+.btn-transparent:hover {
+	background-color: #fff;
+}
+
+.btn-rounded {
+	border-radius: 70px;
+}
+
+.btn-large {
+	padding: 11px 45px;
+	font-size: 18px;
+}
+
+/**
+ * Change animation duration
+ */
+.animated {
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeInRight {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(100px, 0, 0);
+		transform: translate3d(100px, 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInRight {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(100px, 0, 0);
+		transform: translate3d(100px, 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.fadeInRight {
+	-webkit-animation-name: fadeInRight;
+	animation-name: fadeInRight;
+}
+
+
+.space{
+    height: 70px !important;
+    padding: 50px;
+    width: 100%;
+}
+
+.bgprimary{
+	background-color: #2078BF;
+}
+.btn-primary{
+	background: #2078BF !important;
+	color: #fff;
+	border-color: #2078BF !important;
+}
+
+.text-primary{
+	color: #2078BF !important;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: calc(1.5em + 0.75rem + 2px);
+	padding: 0.375rem 0.75rem;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.star-checked{
+    color: orange;
+}
+
+/* Three column layout */
+.star-side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+}
+
+.star-middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+.star-right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.star-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+
+.star-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.star-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.star-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.star-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.star-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+
+/* table slideshow */
+
+
+
+
+@media (max-width: 400px) {
+    .star-side, .star-middle {
+        width: 100%;
+    }
+    .star-right {
+        display: block;
+    }
+}
